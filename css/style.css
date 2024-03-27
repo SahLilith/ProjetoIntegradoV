@@ -1,0 +1,29 @@
+body{
+    background-image: url('https://img.freepik.com/fotos-premium/dinossauros-poster-documentario-fundo-cinematografico_470436-443.jpg');
+    background-size:cover ;
+}
+
+
+.titulo{
+    color: orangered;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+button[type="submit"]
+{
+    color: black;
+}
+
+
+a{
+    color: black;
+}
