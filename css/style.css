@@ -4,6 +4,13 @@ body{
 }
 
 
+nav{
+    color:black;
+}
+
+nav :hover{
+    color: orange;
+}
 .titulo{
     color: orangered;
 }

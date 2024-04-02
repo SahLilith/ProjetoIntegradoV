@@ -6,6 +6,9 @@ body {
     padding: 0;
 }
 
+nav{
+    color: black; 
+}
 .container {
     width: 400px;
     margin: 50px auto;
