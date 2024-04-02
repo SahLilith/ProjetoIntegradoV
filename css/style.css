@@ -3,13 +3,17 @@ body{
     background-size:cover ;
 }
 
-
 nav{
-    color:black;
+  border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: orange;
+}
+nav a{
+    color:blue;
 }
 
 nav :hover{
-    color: orange;
+    color: orangered;
 }
 .titulo{
     color: orangered;
@@ -30,6 +34,15 @@ button[type="submit"]
     color: black;
 }
 
+
+.btn-jogar{
+    font-size: 24px; /* Tamanho da fonte */
+    margin:16em auto;
+    padding: 20px 40px; /* Espaçamento interno */
+      
+      
+      
+    }
 
 a{
     color: black;
