@@ -7,3 +7,7 @@ window.onload = function() {
 function fecharPopup() {
     document.getElementById('popup').style.display = 'none';
 }
+
+
+
+
