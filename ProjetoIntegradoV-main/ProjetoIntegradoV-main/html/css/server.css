@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/fotos-premium/besta-da-selva-bela-fotografia-de-um-velociraptor-na-natureza-generative-ai_796128-3570.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: orange;
+  }
+nav a{
+    color: blue; 
+}
+nav :hover{
+    color: orangered;
+}
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: greens;
+}

@@ -1,0 +1,70 @@
+body{
+    background-image: url('https://img.freepik.com/fotos-premium/dinossauros-poster-documentario-fundo-cinematografico_470436-443.jpg');
+    background-size:cover ;
+}
+
+nav{
+  border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: orange;
+}
+nav a{
+    color:blue;
+}
+
+nav :hover{
+    color: orangered;
+}
+.titulo{
+    color: orangered;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+button[type="submit"]
+{
+    color: black;
+}
+.popup img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    border: 2px solid;
+}
+
+.popup p {
+    width: 300px;
+    text-align: center;
+    color: blue;
+    background-color: orange;
+    margin-left: 390px;
+    border: 2px solid black;
+}
+
+.popup button {
+    margin-left: 510px;
+    color: blue;
+    background-color: orange;
+}
+
+.btn-jogar{
+    font-size: 24px; /* Tamanho da fonte */
+    margin:16em auto;
+    padding: 20px 40px; /* Espaçamento interno */
+      
+      
+      
+    }
+
+a{
+    color: black;
+}
