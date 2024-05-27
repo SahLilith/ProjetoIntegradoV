@@ -1,5 +1,11 @@
 let loginSucesso=false ;
-let tentativas=0;
+
+const listaUsers=[
+    {exampleInputEmail1:'dodocaralho@gmail.com', exampleInputPassword1: '123four'},
+    {exampleInputEmail1:'enzoGui2005@hotmail.com',  exampleInputPassword1:'trinket'},
+    {exampleInputEmail1:'kawaiilaminaflamejante@gmail.com',exampleInputPassword1:'kawaii666'},
+    {exampleInputEmail1:'fudiu',exampleInputPassword1:'semnexo27'}
+];
 
 //Laço de repetição
 function login(){
@@ -8,11 +14,14 @@ function login(){
 
 
 // Verifica se o nome de usuário e senha estão corretos
-if (username === 'usuario' && password === 'senha') {
-    console.log('Login bem-sucedido!');
-    window.location.href = 'server.html';
+const user = listaUsers.find(user => user.exampleInputEmail1 === username && user.exampleInputPassword1 === password);
+
+if (user) {
+    window.location.href = './html/server.html';
     loginSucesso = true;
+    console.log('Login bem-sucedido!');
   } else {
+    
     Swal.fire({
         icon: 'error',
         title: 'Nome de usuário ou senha incorretos',
@@ -22,38 +31,12 @@ if (username === 'usuario' && password === 'senha') {
       });
       
       // Limpar os campos de entrada para tentativa subsequente
-      document.getElementById('username').value = '';
-      document.getElementById('password').value = '';
+      document.getElementById('exampleInputEmail1').value = '';
+      document.getElementById('exampleInputPassword1').value = '';
     
     
     
-    
-    /*// Cria uma nova div para conter a mensagem e a imagem
-    const div = document.createElement('div');
-    
-    // Cria um elemento de imagem
-    const img = document.createElement('img');
-    img.src = 'img/dinofauro.meme.png'; 
-    img.alt = 'Nome de usuário ou senha incorretos';
-    
-    // Cria um elemento de parágrafo para a mensagem
-    const p = document.createElement('p');
-    p.textContent = 'Nome de usuário ou senha incorretos. Tente novamente.';
-    
-    // Adiciona a imagem e a mensagem à div
-    div.appendChild(img);
-    div.appendChild(p);
-    
-    // Exibe o alerta com a div como conteúdo
-    alert(div.innerHTML);
-    
-    // Limpar os campos de entrada para tentativa subsequente
-    document.getElementById('exampleInputEmail1').value = '';
-    document.getElementById('exampleInputPassword1').value = '';
-    */
+
   }
 }
 
-if (!loginSucesso) {
-  console.log('Número máximo de tentativas excedido. Por favor, tente novamente mais tarde.');
-}
