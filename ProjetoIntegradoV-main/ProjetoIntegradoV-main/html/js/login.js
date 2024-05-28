@@ -8,8 +8,9 @@ const listaUsers=[
 ];
 
 //Laço de repetição
-function login(){
-    const username = document.getElementById('exampleInputEmail1').value;
+function login(event){
+  event.preventDefault();
+  const username = document.getElementById('exampleInputEmail1').value;
     const password=document.getElementById('exampleInputPassword1').value;
 
 
@@ -17,7 +18,7 @@ function login(){
 const user = listaUsers.find(user => user.exampleInputEmail1 === username && user.exampleInputPassword1 === password);
 
 if (user) {
-    window.location.href = './html/server.html';
+    window.location.href = '../server.html';
     loginSucesso = true;
     console.log('Login bem-sucedido!');
   } else {

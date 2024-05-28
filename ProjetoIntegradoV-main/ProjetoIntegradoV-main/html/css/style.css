@@ -56,10 +56,13 @@ button[type="submit"]
     background-color: orange;
 }
 
+.carousel-item img {
+    height: 750px;
+}
 .btn-jogar{
-    font-size: 24px; /* Tamanho da fonte */
-    margin:16em auto;
-    padding: 20px 40px; /* Espaçamento interno */
+    font-size: 30px; /* Tamanho da fonte */
+    margin:8em auto;
+    padding: 20px 30px; /* Espaçamento interno */
       
       
       
